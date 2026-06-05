@@ -33,8 +33,6 @@ function generateMaze(rows: number, cols: number): MazeGrid {
     Array.from({ length: cols }, () => "wall" as Cell),
   );
 
-  const rng = () => Math.random();
-
   function carve(r: number, c: number) {
     grid[r][c] = "empty";
     const dirs = [
@@ -42,7 +40,7 @@ function generateMaze(rows: number, cols: number): MazeGrid {
       [2, 0],
       [0, -2],
       [0, 2],
-    ].sort(() => rng() - 0.5);
+    ].sort(() => Math.random() - 0.5);
 
     for (const [dr, dc] of dirs) {
       const nr = r + dr;

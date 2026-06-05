@@ -1,0 +1,19 @@
+{
+  "name": "pathfinding-playground",
+  "version": "1.0.0",
+  "description": "BFS, DFS, Dijkstra and A* across three scenarios",
+  "type": "module",
+  "scripts": {
+    "maze": "tsx src/scenarios/maze.ts",
+    "maze:bfs": "cross-env ALGO=bfs tsx src/scenarios/maze.ts",
+    "maze:dfs": "cross-env ALGO=dfs tsx src/scenarios/maze.ts",
+    "maze:dijkstra": "cross-env ALGO=dijkstra tsx src/scenarios/maze.ts",
+    "maze:astar": "cross-env ALGO=astar tsx src/scenarios/maze.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "cross-env": "^7.0.3",
+    "tsx": "^4.7.0",
+    "typescript": "^5.4.0"
+  }
+}

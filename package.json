@@ -1,7 +1,7 @@
 {
   "name": "pathfinding-playground",
   "version": "1.0.0",
-  "description": "BFS, DFS, Dijkstra and A* across three scenarios",
+  "description": "Interactive pathfinding algorithms visualization with BFS, DFS, Dijkstra and A*",
   "type": "module",
   "scripts": {
     "maze": "tsx src/scenarios/maze.ts",

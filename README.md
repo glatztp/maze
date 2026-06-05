@@ -63,6 +63,8 @@ index.html          # Interactive web visualizer
 npm install
 # or
 pnpm install
+# or  
+yarn install
 ```
 
 ## Usage
